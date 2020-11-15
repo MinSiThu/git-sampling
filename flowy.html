@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowy Testing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/flowy.min.css"> 
+    <script src="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/flowy.min.js"></script>
+</head>
+
+<body>
+    <div class="create-flowy">The block to be dragged</div>
+    <div class="create-flowy">
+        <button>Hello</button>
+    </div>
+    <div id="canvas"></div>
+    <script>
+        var spacing_x = 40;
+        var spacing_y = 100;
+        // Initialize Flowy
+        flowy(document.getElementById("canvas"), onGrab, onRelease, onSnap, onRearrange, spacing_x, spacing_y);
+        function onGrab(block){
+            // When the user grabs a block
+        }
+        function onRelease(){
+            // When the user releases a block
+        }
+        function onSnap(block, first, parent){
+            // When a block snaps with another one
+        }
+        function onRearrange(block, parent){
+            // When a block is rearranged
+        }
+    </script>
+</body>
+</html>
